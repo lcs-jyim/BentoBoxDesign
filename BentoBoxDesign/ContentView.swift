@@ -17,21 +17,20 @@ struct ContentView: View {
                 //first column
                 //first row
                 HStack{
+                    //first Block
                     ZStack{
                         Rectangle()
                             .fill(lightgray)
                             .frame(height:120)
                             .cornerRadius(15)
                         VStack{
-                            Image("GPU")
+                            Image("Thunderbolt")
                                 .resizable()
-                                .frame(width:60,height:60)
-                                .offset(y:0)
-                                .offset(x:0)
+                                .frame(width:35,height:60)
+                                .offset(x:0,y:0)
                             Text("ThunderBolt 4")
                                 .font(.system(size: 12))
                                 .offset(y:15)
-                             
                         }
                     }
                     Rectangle()
