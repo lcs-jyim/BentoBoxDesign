@@ -8,70 +8,97 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let lightgray = Color(red: 0.85, green: 0.85, blue: 0.85)
     var body: some View {
-        HStack(alignment:.top){
+        HStack(){
             //whole structure
             VStack(alignment:.leading){
                 //first column
                 //first row
                 HStack{
+                    ZStack{
+                        Rectangle()
+                            .fill(lightgray)
+                            .frame(height:120)
+                            .cornerRadius(15)
+                        VStack{
+                            Image("GPU")
+                                .resizable()
+                                .frame(width:60,height:60)
+                                .offset(y:0)
+                                .offset(x:0)
+                            Text("ThunderBolt 4")
+                                .font(.system(size: 12))
+                                .offset(y:15)
+                             
+                        }
+                    }
                     Rectangle()
-                        .fill(.gray)
-                        .frame(height:110)
-                        .cornerRadius(15)
-                        
-                    Rectangle()
-                        .frame(height:110)
+                        .fill(lightgray)
+                        .frame(height:120)
                         .cornerRadius(15)
                 }
                 //second row
                 Rectangle()
-                    .frame(height:170)
+                    .fill(lightgray)
+                    .frame(height:160)
                     .cornerRadius(15)
                 //third row
                 HStack{
                     Rectangle()
-                        .frame(height:110)
+                        .fill(lightgray)
+                        .frame(height:120)
                         .cornerRadius(15)
                     Rectangle()
-                        .frame(height:110)
+                        .fill(lightgray)
+                        .frame(height:120)
                         .cornerRadius(15)
                 }
                 //forth row
                 Rectangle()
+                    .fill(lightgray)
                     .cornerRadius(15)
             }
             //Second Column
             VStack{
                 HStack{
                     Rectangle()
-                        .frame(width:130,height:110)
+                        .fill(lightgray)
+                        .frame(width:130,height:120)
                         .cornerRadius(15)
                     Rectangle()
-                        .frame(width:210,height:110)
+                        .fill(lightgray)
+                        .frame(width:210,height:120)
                         .cornerRadius(15)
                 }
                 Rectangle()
+                    .fill(lightgray)
                     .frame(width:350,height:287)
                     .cornerRadius(15)
                 Rectangle()
+                    .fill(lightgray)
                     .frame(width:350)
                     .cornerRadius(15)
         }
             //3rd column
             VStack{
                 Rectangle()
-                    .frame(height:110)
+                    .fill(lightgray)
+                    .frame(height:120)
                     .cornerRadius(15)
                 HStack{
                     Rectangle()
-                        .frame(height:200)
+                        .fill(lightgray)
+                        .frame(height:240)
                         .cornerRadius(15)
                     Rectangle()
-                        .frame(height:200)
+                        .fill(lightgray)
+                        .frame(height:240)
                         .cornerRadius(15)
                 }
                 Rectangle()
+                    .fill(lightgray)
                     .cornerRadius(15)
                 
             }
